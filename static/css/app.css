@@ -1,0 +1,14 @@
+.top-bar {background-color:#333;}
+.top-bar ul li.name {background-color:#333;}
+#header {border-top: 5px solid #666;}
+#logo {font-size:1.7em;}
+#logo a {color: #333; font-weight:bolder;}
+#footer {text-align: center; }
+ul.simple {list-style-type: none; margin: .5em;}
+h1.subheader {font-size:1em;font-weight: bold; margin: 0 0 .5em .33em; padding:0; letter-spacing:1px;}
+h2 {font-size: 2em;padding-left:47px; background:url('/theme/img/page.png') center left no-repeat;}
+.article {margin-left: 2em;}
+.archives {margin: 2em;}
+ul.archives li {list-style-type:none; list-style-image: url('/theme/img/hash.png') top left no-repeat;}
+a {color: #104982;}
+.article {margin-bottom: 2em; border-bottom: 1px solid #ddd;}

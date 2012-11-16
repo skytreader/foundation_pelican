@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}{{ SITENAME }} / Home{% endblock %}
+
+{% block content %}
+
+
+<div class="row">
+	<div class="twelve columns">
+	<div class="panel">	
+		<h2>Person</h2>
+			<p>I am a Developer, Web and Internet adorer and (amateur) photographer. Apart from spending my days building web services for my employer, I try to learn  about Web Dev, Software, Mathematics, Physics, Genetics and Photography. </p>
+			<p>My interests include gadgets, machines, photography, the Web, languages (machine and natural), cultures, long discussions with friends and family, books, NYC (yes, the city), cooking. I also love watching <a href="http://www.ted.com/">TED talks</a>.</p>	
+			</div>
+	</div>
+</div>
+<p></p>
+
+<div class="row">
+	<div class="twelve columns">
+    	<div class="panel">
+		<h2>Recent Articles</h2>
+		{% if articles %}
+	        {% for article in (articles_page.object_list if articles_page else articles) %}
+    	    <div class="article">
+        	        <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+            	    <div class="summary">
+						{{ article.summary }}
+	                </div>
+    	    </div>
+	        {% endfor %}
+		{% endif %}
+		
+	   	<p class="archives">
+			<a class="secondary button" href="/archives.html">Archives &gt;&gt;</a>
+		</p>
+	    </div>
+    </div>
+</div> 
+{% endblock %}
