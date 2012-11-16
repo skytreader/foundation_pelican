@@ -5,4 +5,4 @@ I like `Foundation`_. I like `Pelican`_. They got married here.
 
 
 .. _`Pelican`: https://github.com/getpelican/pelican/
-.. _`Foundation`: http://foundation.zurb.com/
+.. _`Foundation`: https://github.com/zurb/foundation
