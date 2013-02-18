@@ -1,5 +1,4 @@
 {% if not article.project %}
 	<abbr class="published" title="{{ article.date.isoformat() }}">
-    <b>{{ article.locale_date }}</b>
-    {% include 'taglist.html' %}
+    [ <b>{{ article.locale_date }}</b> ]
 {% endif %}

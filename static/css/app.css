@@ -1,6 +1,5 @@
 .top-bar {background-color:#333;}
 .top-bar ul li.name {background-color:#333;}
-/*#header {border-top: 5px solid #666;}*/
 #logo {font-size:1.7em;}
 #logo a {color: #333; font-weight:bolder;}
 #footer {text-align: center; }
@@ -9,10 +8,8 @@ h1.subheader {font-size:1em;font-weight: bold; margin: 0 0 .5em .33em; padding:0
 h2 {font-size: 2em;padding-left:47px; background:url('/theme/img/page.png') center left no-repeat;}
 .article {margin-left: 2em;}
 .archives {margin: 2em;}
-ul.archives li {list-style-type:circle; margin: 0 0 0 2.5em; padding:0; line-height:.625em;}
-ul.archives li span abbr {font-size: .8em; margin-left: 1em; line-height:1em;}
-ul.archives li a {line-height:1em;}
+ul.archives li {list-style-type:circle;}
+ul.archives li span abbr {font-size: .8em; margin-left: 1em; cursor:default; border:none;}
 a {color: #104982;}
-/*.article {margin-bottom: 2em; border-bottom: 1px solid #ddd;}*/
 ul.article {list-style-type: circle; }
 ul.article li {margin-left: 2.5em;}
