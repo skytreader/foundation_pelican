@@ -18,5 +18,7 @@ ul.article li {margin-left: 2.5em;}
 div.pagination {padding: 1em 5em; margin:1em;}
 .prev {float:left;}
 .next {float:right;}
+.pagination .primary.button {width: 12em;}
+.pagination .primary.button {width: 12em;}
 abbr.published {cursor: default;}
 
