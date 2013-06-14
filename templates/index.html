@@ -5,40 +5,22 @@
 {% block content %}
 
 
-<div class="row">
-	<div class="twelve columns">
-	<div class="panel">	
-		<h2>About</h2>
-			<p>I am a Developer, Web and Internet adorer and (amateur) photographer. Apart from spending my days building web services for my employer, I try to learn  about Web Dev, Software, Mathematics, Physics, Genetics and Photography. </p>
+		<h1 class="subheader">About</h1>
+			<p>I am a Developer, Web and Internet adorer and photographer. Apart from spending my days building web services for my employer, I try to learn  about Web Dev, Software, Mathematics, Physics, Genetics and Photography. </p>
 			<p>My interests include gadgets, machines, photography, the Web, languages (machine and natural), cultures, long discussions with friends and family, books, NYC (yes, the city), cooking. I also love watching <a href="http://www.ted.com/">TED talks</a>.</p>	
-			</div>
-	</div>
-</div>
-<p></p>
 
-<div class="row">
-	<div class="twelve columns">
-    	<div class="panel">
-		<h2>Recent Articles</h2>
+		<h2 class="subheader">Recent Articles</h2>
 		{% if articles %}
-    	    <ul class="article">
+    	   <ul class="circle home-article-list">
 	        {% for article in (articles_page.object_list if articles_page else articles) %}
 				<li>
-				<!--<div class="article">-->
-        		        <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
-            		    {#<div class="summary">
-							{{ article.summary }}
-	               		 </div>#}
-	    	   <!-- </div> -->
+        		        <a href="/{{ article.url }}">{{ article.title }}</a>
 				</li>
 	        {% endfor %}
 			</ul>
 		{% endif %}		
-	   	<p class="archives">
-			<a class="secondary button" href="/archives.html">Archives &rarr;</a>
-		</p>
-	    </div>
-    </div>
-</div> 
+	   	
+		<a class="small button secondary radius" href="/blog.html">Posts &rarr;</a>
+		
 {% endblock %}
 
