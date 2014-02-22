@@ -11,12 +11,13 @@
         {% for article in (articles_page.object_list if articles_page else articles) %}
         <div class="article">
                 <h2 class="subheader underline"><a href="/{{ article.url }}">{{ article.title }}</a></h2>
-                {% include "article_infos.html" %}
                 
                 <div class="summary">
                     <blockquote>{{ article.summary }}</blockquote>
                     <a class="button secondary small radius" href="/{{ article.url }}">more...</a>
+                    {% include "article_infos.html" %}
                 </div>
+
         </div>
         {% endfor %}
 {% endif %}

@@ -3,9 +3,10 @@
 
 {% block content %}
  		 <article>
-      	 <header><h1 class="subheader"><a href="/{{article.url}}">{{ article.title }}</a></h1></header>			
+      	 <header><h1 class="subheader"><a href="/{{article.url}}">{{ article.title }}</a></h1></header>
 	        {{ article.content }}
-		</article>		
+		</article>
+	         {% include "article_infos.html"  %}	
 		 <!-- AddThis Button BEGIN -->
 	  <div class="addthis_toolbox addthis_default_style ">
 		<a class="addthis_button_preferred_1"></a>
